@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzy : Sign Up </title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon_white.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img class="nav_logo" src="images/quizzy_nav_white.png" alt="Quizzy">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="challanges.html">CHALLENGES</a></li>
+                <li><a href="createquiz.html">CREATE QUIZ</a></li>
+                <li><a href="index.html#about_us">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <a class="log_button" href="index.html#join_quiz"><button>JOIN QUIZ</button></a>
+    </header>
+    <div class="container">
+        <form id="sign-up-form" action="/auth/signup" method="post">
+            <h1>Create Account</h1>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <span>or use your email for registeration</span>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="collegeName" placeholder="College Name">
+            <div class="radio-group">
+                <p>I am a </p>
+                <label>
+                    <input type="radio" name="role" value="student" required>
+                     Student 
+                </label>
+                <label>
+                    <input type="radio" name="role" value="teacher" required>
+                    Teacher 
+                </label>
+            </div>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Sign In</a></p>
+        </form>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2023 Quizzy Company. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
